@@ -5,7 +5,7 @@ using Fungus;
 
 [EventHandlerInfo("Timers", "SimpleTimer", "Executes a block after an amount of time has elapsed")]
 
-public class Timer : EventHandler {
+public class simpleTimer : EventHandler {
 
     public float duration;
 

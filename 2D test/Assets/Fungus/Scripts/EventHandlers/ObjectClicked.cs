@@ -57,7 +57,7 @@ namespace Fungus
         /// fixes the problem.
         /// </summary>
         protected virtual IEnumerator DoExecuteBlock(int numFrames)
-        {
+        {//
             if (numFrames == 0)
             {
                 ExecuteBlock();

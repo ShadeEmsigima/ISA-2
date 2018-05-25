@@ -1893,7 +1893,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 273482124}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 273482122}
   variables: []
   description: 
   stepPause: 0
@@ -2060,7 +2061,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &554122468
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 554122462}
@@ -2102,6 +2103,7 @@ GameObject:
   - component: {fileID: 619200522}
   - component: {fileID: 619200541}
   - component: {fileID: 619200540}
+  - component: {fileID: 619200542}
   m_Layer: 0
   m_Name: GameIntro
   m_TagString: Untagged
@@ -2122,7 +2124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -5.193081, y: 5.1666737}
+  scrollPos: {x: -19.19308, y: -39.83333}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 292
@@ -2136,7 +2138,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 619200535}
   selectedCommands:
-  - {fileID: 619200536}
+  - {fileID: 619200542}
   variables: []
   description: 
   stepPause: 0
@@ -2510,8 +2512,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 254.47943
-    y: 147.62886
+    x: 234.47943
+    y: 151.62886
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2522,6 +2524,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 619200536}
+  - {fileID: 619200542}
 --- !u!114 &619200536
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2535,7 +2538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: Try again slowpoke!
+  storyText: Lets start the game!
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2679,6 +2682,24 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &619200542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619200518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 21
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Home2
+  loadingImage: {fileID: 2800000, guid: c207de86481ff7d48a2fba2fcc374723, type: 3}
+  sceneNameOLD: 
 --- !u!1 &707475803
 GameObject:
   m_ObjectHideFlags: 0
@@ -3265,6 +3286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07cbdea43b690f3489177820bf941200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowMindset: 0
 --- !u!61 &884356093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3399,7 +3421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 24650282}
+  selectedFlowchart: {fileID: 1164245699}
 --- !u!4 &919856080
 Transform:
   m_ObjectHideFlags: 1
@@ -3700,7 +3722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 89.795296, y: 38.4899}
+  scrollPos: {x: 5.7952957, y: -70.5101}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -3712,7 +3734,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1164245700}
+  - {fileID: 1164245713}
   selectedCommands: []
   variables: []
   description: 
@@ -5236,6 +5258,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b4ed9e4de2b6f384485f3b796af73d84, type: 2}
   - {fileID: 2100000, guid: ac6eeb226188a2442a0c62d73bd3d64c, type: 2}
   isHuman: 0
+  isAlwaysBlack: 0
+  isAlwaysYellow: 0
+  isBoth: 0
 --- !u!23 &1209570611
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6777,6 +6802,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b4ed9e4de2b6f384485f3b796af73d84, type: 2}
   - {fileID: 2100000, guid: ac6eeb226188a2442a0c62d73bd3d64c, type: 2}
   isHuman: 1
+  isAlwaysBlack: 0
+  isAlwaysYellow: 0
+  isBoth: 0
 --- !u!33 &2022706833
 MeshFilter:
   m_ObjectHideFlags: 0
